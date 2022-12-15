@@ -7,8 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".fragments.PinkFragment"
-        android:background="#D5FF006F"
+        tools:context=".safeargs.SafeArgsFragment"
+        android:background="#8BC34A"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,7 +17,7 @@
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/et_nom_pink"
+                android:id="@+id/et_prenom_histoire"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -30,8 +30,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nom"
-                app:layout_constraintBottom_toTopOf="@id/et_nom_pink"
+                android:text="Prénom :"
+                app:layout_constraintBottom_toTopOf="@id/et_prenom_histoire"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 />
@@ -44,7 +44,7 @@
             android:layout_weight="1">
 
             <EditText
-                android:id="@+id/et_naissance"
+                android:id="@+id/et_lieu_histoire"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
@@ -52,14 +52,13 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_margin="30dp"
-                android:inputType="number"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Annee de naissance"
-                app:layout_constraintBottom_toTopOf="@id/et_naissance"
+                android:text="Lieu :"
+                app:layout_constraintBottom_toTopOf="@id/et_lieu_histoire"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 />
@@ -68,10 +67,10 @@
 
 
         <Button
-            android:id="@+id/btn_go_pink"
+            android:id="@+id/btn_go_histoire"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go"
+            android:text="Commencer l'histoire"
             android:layout_gravity="center" />
     </LinearLayout>
 </layout>
